@@ -1,3 +1,10 @@
+/**
+ * [GeometryDrawingProgram.java]
+ * A program that draws various different shapes as specified by the user.
+ * @author Edison Du
+ * @version 1.0 May 12, 2021
+ */
+
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import java.awt.Graphics;
@@ -5,13 +12,6 @@ import java.awt.Color;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
-
-/**
- * [GeometryDrawingProgram.java]
- * A program that draws various different shapes as specified by the user.
- * @author Edison Du
- * @version 1.0 May 12, 2021
- */
 
 class GeometryDrawingProgram {
   
