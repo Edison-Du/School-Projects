@@ -1,12 +1,12 @@
-import java.awt.Graphics;
-import java.awt.Color;
-
 /**
  * [Polygon.java]
  * Represents a polygon shape composed of a definite number of vertexes and straight line segments.
  * @author Edison Du
  * @version 1.0 May 12, 2021
  */
+
+import java.awt.Graphics;
+import java.awt.Color;
 
 abstract class Polygon extends TwoDimensionalShape {
   
