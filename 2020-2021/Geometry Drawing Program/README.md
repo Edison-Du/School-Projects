@@ -23,6 +23,3 @@ This java program allows the user to create various 2D shapes that are displayed
 <ul>
 <li>Interact with the program using the terminal.</li>
 </ul>
-<h2>Additional Links</h2>
-  
-[Poem Examples](http://www.shadowpoetry.com/resources/wip/types.html)  
