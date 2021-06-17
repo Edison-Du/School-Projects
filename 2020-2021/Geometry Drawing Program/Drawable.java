@@ -1,4 +1,3 @@
-import java.awt.Graphics;
 
 /**
  * [Drawable.java]
@@ -6,6 +5,8 @@ import java.awt.Graphics;
  * @author Edison Du
  * @version 1.0 May 12, 2021
  */
+
+import java.awt.Graphics;
 
 public interface Drawable {
   
