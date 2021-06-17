@@ -1,12 +1,12 @@
-import java.awt.Graphics;
-import java.awt.Color;
-
 /**
  * [Ellipse.java]
  * Represents an ellipse/oval.
  * @author Edison Du
  * @version 1.0 May 12, 2021
  */
+
+import java.awt.Graphics;
+import java.awt.Color;
 
 class Ellipse extends TwoDimensionalShape {
   
