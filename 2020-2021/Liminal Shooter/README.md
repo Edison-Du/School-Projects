@@ -2,7 +2,7 @@
 This is a top-down dungeon crawler type shooter game created in Java.
 <h2>Key Features</h2>
 <ul>
-<li>A menu system</li>
+<li>A menu system.</li>
 <li>Player movement, shooting, and interactions through keyboard and mouse.</li>
 <li>Fight various different enemies that can shoot, and can efficiently pathfind around walls to reach the player.</li>
 <li>A randomly generated room system that can be explored by the player.</li>
