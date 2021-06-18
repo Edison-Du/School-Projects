@@ -2,7 +2,7 @@
 This java program allows the user to create various 2D shapes that are displayed on the screen.
 <h2>Key Features</h2>
 <ul>
-<li>Allow the user to perform these actions:</li>
+<li>Allows the user to perform these actions:</li>
   <ul>
     <li>List and display data related to the shapes (e.g. area, perimeter).</li>
     <li>Add, remove and translate shapes.</li>
