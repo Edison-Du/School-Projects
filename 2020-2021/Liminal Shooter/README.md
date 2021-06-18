@@ -10,7 +10,7 @@ This is a top-down dungeon crawler type shooter game created in Java.
 <h2>How to Use</h2>
 <ul>
 <li>Compile and run with Java. The main program is located in "GameFrame.java".</li>
-<li>Once run, use mouse to interact with menu. There is a help page explaining how to play the game.</li>
+<li>Once run, use mouse to interact with the menu. There is a help page explaining how to play the game.</li>
 </ul>
 <h2>Notes</h2>
 <ul>
