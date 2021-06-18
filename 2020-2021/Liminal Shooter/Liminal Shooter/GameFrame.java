@@ -32,6 +32,13 @@ import java.awt.event.MouseMotionListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
+/******* Sound imports *******/
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
+
 /******* Input and Output imports *******/
 import java.util.Scanner;
 import java.util.InputMismatchException;
@@ -82,6 +89,40 @@ public class GameFrame extends JFrame {
   static BufferedImage heartImage;
   static BufferedImage keyImage;
   static BufferedImage shieldImage;
+  
+  /***** Music *****/
+  static Clip menuMusic;
+  static Clip gameMusic;
+  static Clip bossMusic;
+  
+  /***** Sound Effects *****/
+  static Clip keyPickUp;
+  static Clip gunPickUp;
+  static Clip healthPickUp;
+  static Clip clickSound;
+  static Clip unlockedBoss;
+  static Clip roomLocked;
+  static Clip roomOpened;
+  static Clip damageTaken;
+  static Clip enemyDeath;
+  static Clip playerDeath;
+  static Clip bossDeath;
+  static Clip playerBasicGunShot;
+  static Clip playerShotgunShot;
+  static Clip playerMachineGunShot;
+  static Clip playerClearGunShot;
+  static Clip playerWaveGunShot;
+  static Clip enemyBasicGunShot;
+  static Clip enemyShotgunShot;
+  static Clip enemyMachineGunShot;
+  static Clip enemyClearGunShot;
+  static Clip enemyWaveGunShot;
+  static Clip bossAttack1;
+  static Clip bossAttack2;
+  static Clip bossAttack3;
+  static Clip bossAttack4;
+  static Clip bossAttack5;
+  static Clip bossAttack6;
   
   /***** Statistics *****/
   static int totalBulletsShot=0;
@@ -1500,6 +1541,29 @@ public class GameFrame extends JFrame {
       System.out.println("No file by the name '" + fileName + "' exists.");
     } catch (IOException e) {
       System.out.println("Error loading the file '" + fileName + "'.");
+    }
+    return null;
+  }
+  
+  /**
+   * loadAudio
+   * Reads and returns a clip of an audio file
+   * @param fileName The audio file to read
+   * @return A Clip representing the audio file or null if there were errors reading the file
+   */
+  public static Clip loadAudio(String fileName) {
+    try {
+      Clip clip = AudioSystem.getClip();
+      clip.open(AudioSystem.getAudioInputStream(new File(fileName)));
+      return clip;
+    } catch (FileNotFoundException e) {
+      System.out.println("Missing audio file by the name of '" + fileName + "'.");
+    } catch (UnsupportedAudioFileException e) {
+      System.out.println("The audio file '" + fileName + "' is unsupported");
+    } catch (LineUnavailableException e) {
+      System.out.println("Error loading '" + fileName + "'");
+    } catch (IOException e) {
+      System.out.println("Error loading '" + fileName + "'");
     }
     return null;
   }
