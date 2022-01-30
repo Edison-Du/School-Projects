@@ -8,3 +8,11 @@
   <li>Level system with enemies increasing in difficulty.</li>
   <li>Items that can be picked up by the player.</li>
 </ul>
+<h2>Images</h2>
+<table>
+  <tr>
+    <td><img src="../../docs/the-room-1.PNG"></td>
+    <td><img src="../../docs/the-room-2.PNG"></td>
+    <td><img src="../../docs/the-room-3.PNG"></td>
+  </tr>
+</table>
