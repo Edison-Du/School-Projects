@@ -22,11 +22,6 @@
 # Level system done by Edison Du                   # 
 #==================================================#
 
-# Line 1200 (Changed the levels from 10 to 20)
-# Line 538 (Smaller chance for shoes)
-# Line 788 (Changed maximum strength)
-# Line 1075 (Duo bullet)
-
 import pygame
 from pygame.locals import *
 import random
