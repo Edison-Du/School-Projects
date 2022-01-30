@@ -7,7 +7,7 @@ bot = commands.Bot(command_prefix = "!")
 dirPath = os.path.dirname(os.path.realpath(__file__))
 
 async def is_owner(ctx):
-    return (ctx.author.id == 451112923671035904)
+    return (ctx.author.id == "Your ID here") # Owner id
 
 
 bot.remove_command("help")
@@ -24,4 +24,4 @@ async def on_command_error(ctx, error):
         await ctx.send(f"{ctx.author.mention} Command '{ctx.message.content}' not found. Please type a valid command.")
     else: raise error
 
-bot.run('ODM1NDk4NTEzNTI5MTc2MDc1.YIQUoA.9P4zJFt_o5SUKOM9e8LbyYaFsQw')
+bot.run('TOKEN HERE') # Discord bot token
