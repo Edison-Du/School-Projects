@@ -24,7 +24,5 @@ This is a Pygame program that allows you to play battleship against a simulated 
     <li>Enter "hit" if the opponent hit a ship, followed by the respective ship name, and "sunk" if the ship has been sunk</li>
   </ul>
 </ul>
-<h2>Additional Links</h2>
-
-[Pygame Installation](https://www.pygame.org/wiki/GettingStarted)  
-[Pygame Reference](https://www.pygame.org/)  
+<h2>Images</h2>
+<img src="../../docs/battleship.PNG">
