@@ -24,3 +24,5 @@ This java program allows the user to create various 2D shapes that are displayed
 <li>Compile and run with Java. The main program is located in "GeometryDrawingProgram.java".</li>
 <li>Interact with the program using the terminal.</li>
 </ul>
+<h2>Images</h2>
+<img src="../../docs/geometry-drawing-program.PNG">
