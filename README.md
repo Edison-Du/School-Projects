@@ -10,6 +10,7 @@
   <li>Poem Predictor</li>
   <li>Geometry Drawing Program</li>
   <li>Liminal Shooter (top-down shooter game)</li>
+  <li>Discord Scheduling Bot</li>
 </ul>
 <h2>2021-2022</h2>
 <ul>
