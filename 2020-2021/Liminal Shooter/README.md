@@ -13,8 +13,10 @@ This is a top-down dungeon crawler type shooter game created in Java.
 <li>Compile and run with Java. The main program is located in "GameFrame.java".</li>
 <li>Once run, use mouse to interact with the menu. There is a help page explaining how to play the game.</li>
 </ul>
-<h2>Notes</h2>
-<ul>
-  <li>The sound effects and music of the game were not uploaded because they did not belong to me.</li>
-  <li>The art is completely original.</li>
-</ul>
+<table>
+  <tr>
+    <td><img src="../../docs/liminal-shooter-1.PNG"></td>
+    <td><img src="../../docs/liminal-shooter-2.PNG"></td>
+    <td><img src="../../docs/liminal-shooter-3.PNG"></td>
+  </tr>
+</table>
