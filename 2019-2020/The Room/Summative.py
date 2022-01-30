@@ -539,8 +539,8 @@ class room:
             validPosition = True
             position = coordinate(random.randint(0,600), random.randint(0,600))
             # Collectibles are random (speed, reload, damage, health)
-            # temporaryItem = boostCollectible(position.x, position.y, 1, random.randint(1,4))
-            temporaryItem = boostCollectible(position.x, position.y, 1, random.choice([1,2,2,2,3,3,3,4,4]))
+            temporaryItem = boostCollectible(position.x, position.y, 1, random.randint(1,4))
+            # temporaryItem = boostCollectible(position.x, position.y, 1, random.choice([1,2,2,2,3,3,3,4,4]))
             # Check if it is not on top of other items, walls or the player
             for i in self.items:
                 if(getCollision(i.collision, temporaryItem.collision, 0,0,0,0)):
@@ -790,11 +790,11 @@ while restart:
                     player.speed += s.boostAmount*0.3
                 elif (s.boostType == 2):
                     # Reload collectible (capped at one bullet every 5 frames)
-                    if (player.reloadSpeed >= 0): #5
+                    if (player.reloadSpeed >= 5):
                         player.reloadSpeed -= s.boostAmount 
                 elif (s.boostType == 3):
                     # Damage collectible (capped at 20 damage)
-                    if (player.strength < 100): #20
+                    if (player.strength < 20):
                         player.strength += s.boostAmount
                 elif (s.boostType == 4):
                      # Health collectible (capped at 10 health)
@@ -1076,13 +1076,7 @@ while restart:
                     if not(getCollision(player.collision, [x, y, x, y], 0, 0, 0, 0)):
                         pygame.mixer.Sound.play(playerShot)
                         bulletList.append(projectile(player.x+20,player.y+20,x,y,10,1,1))
-
                         a, b = player.x+20, player.y+20
-                        bulletList.append(projectile(player.x+20,player.y+20,     -(x-a)+a,-(y-b)+b,      10,1,1))
-                        bulletList.append(projectile(player.x+20,player.y+20,     -(y-b)+a, (x-a)+b,      10,1,1))
-                        bulletList.append(projectile(player.x+20,player.y+20,     y-b+a, -(x-a)+b,      10,1,1))
-                        # bulletList.append(projectile(player.x+20,player.y+20,player.x+20-(player.x-x),player.y+20+(player.y-y),10,1,1))
-                        # bulletList.append(projectile(player.x+20,player.y+20,player.x+20+(player.x-x),player.y+20-(player.y-y),10,1,1))
 
                     # Once shot, reset the reload timer
                     bulletDelay = player.reloadSpeed
